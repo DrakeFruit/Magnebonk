@@ -1,0 +1,63 @@
+{
+  "Name": "Coffee",
+  "Description": "increases speed by 5%",
+  "ItemComponent": "Coffee",
+  "Rarity": "Common",
+  "Prefab": {
+    "_type": "gameobject",
+    "prefab": "items/coffee.prefab"
+  },
+  "Tilted": true,
+  "Icon": {
+    "$compiler": "texture",
+    "$source": "text",
+    "data": {
+      "Size": "128,128",
+      "Margin": {
+        "Left": 0,
+        "Top": 0,
+        "Right": 0,
+        "Bottom": 0
+      },
+      "TextFlags": "Center, DontClip",
+      "TextScope": {
+        "Text": "Co",
+        "TextColor": "1,1,1,1",
+        "FontName": "Roboto",
+        "FontSize": 64,
+        "FontWeight": 400,
+        "FontItalic": false,
+        "LineHeight": 1,
+        "LetterSpacing": 0,
+        "WordSpacing": 0,
+        "FilterMode": "Bilinear",
+        "FontSmooth": "Auto",
+        "Outline": {
+          "Enabled": false,
+          "Size": 4,
+          "Color": "0,0,1,1"
+        },
+        "Shadow": {
+          "Enabled": false,
+          "Size": 4,
+          "Color": "0,0,0,1",
+          "Offset": "4,4"
+        },
+        "OutlineUnder": {
+          "Enabled": false,
+          "Size": 4,
+          "Color": "0,1,0,1"
+        },
+        "ShadowUnder": {
+          "Enabled": false,
+          "Size": 4,
+          "Color": "0,0,0,1",
+          "Offset": "4,4"
+        }
+      }
+    },
+    "compiled": null
+  },
+  "__references": [],
+  "__version": 0
+}

@@ -1,0 +1,43 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using System.Collections.Generic;
+@using System.Linq;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	<div class="chest">
+		<div class="item-section">
+			<Image Texture=@ShownItem.Icon class="item-render"/>
+		</div>
+		<div class="options">
+			<div class="reject" onclick=@(() => Destroy())>Reject</div>
+			<div class="accept" onclick=@(() => Destroy())>Accept</div>
+		</div>
+	</div>
+</root>
+
+@code
+{
+	public List<ItemDefinition> PotentialItems { get; set; } = new();
+	public ItemDefinition SelectedItem => PotentialItems.First();
+	public ItemDefinition ShownItem = new ItemDefinition();
+
+	protected override void OnStart()
+	{
+		GameTask.RunInThreadAsync(async () =>
+        {
+			RealTimeSince timeSinceStart = 0;
+			while( timeSinceStart < 3 )
+			{
+				for( var y = 0; y < PotentialItems.Count; y++ )
+				{
+					await GameTask.Delay(50);
+					ShownItem = PotentialItems[y];
+				}
+			}
+			ShownItem = SelectedItem;
+        });
+	}
+	protected override int BuildHash() => System.HashCode.Combine( ShownItem );
+}

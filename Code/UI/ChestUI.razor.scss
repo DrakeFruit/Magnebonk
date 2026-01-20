@@ -1,0 +1,99 @@
+ChestUI
+{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.05);
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-family: Poppins;
+	color: #fff;
+	font-size: 25px;
+	padding-bottom: 6%;
+	pointer-events: all;
+
+	.chest
+	{
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		aspect-ratio: 1.5;
+		background-color: rgb(205, 187, 170);
+		border-radius: 25px;
+		border: 10px rgb(143, 79, 30);
+		overflow: hidden;
+
+		.item-section
+		{
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+
+			.item-render
+			{
+				&:intro
+				{
+					transform: translateY(150%);
+					opacity: 0;
+				}
+
+				background: radial-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0) 50%);
+				opacity: 1;
+				transform: translateY(0%);
+				width: 200px;
+				aspect-ratio: 1;
+				transition: transform 3s ease-out;
+				transition: opacity 2s ease-in;
+			}
+		}
+
+		.options
+		{
+			width: 100%;
+			height: 15%;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			background-color: tan;
+
+			.reject, .accept
+			{
+				font-size: 30px;
+				height: 50px;
+				aspect-ratio: 4;
+				padding: 10px;
+				padding-top: 12px;
+				justify-content: center;
+				align-items: center;
+				text-transform: uppercase;
+				transform: scale(0.95);
+				transition: transform 50ms ease-in-out;
+				border: 3px rgb(0, 0, 0);
+				border-radius: 10px;
+			}
+
+			.reject
+			{
+				background-color: rgb(194, 0, 0);
+
+				&:hover
+				{
+					background-color: red;
+					transform: scale(1.05);
+				}
+			}
+
+			.accept
+			{
+				background-color: rgb(0, 158, 0);
+
+				&:hover
+				{
+					background-color: rgb(0, 205, 0);
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+}

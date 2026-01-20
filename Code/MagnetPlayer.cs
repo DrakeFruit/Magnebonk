@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Numerics;
+using System.Linq;
 using Sandbox;
 
 public sealed class MagnetPlayer : Component, Component.ITriggerListener
@@ -9,6 +10,10 @@ public sealed class MagnetPlayer : Component, Component.ITriggerListener
 	[RequireComponent] HullCollider Collider { get; set; }
 	public List<Coin> CoinsList { get; set; } = new();
 	public int Coins { get; set; }
+
+	public static MagnetPlayer Local => Game.ActiveScene.GetAll<MagnetPlayer>().FirstOrDefault( x => !x.IsProxy );
+	public static PlayerController LocalController => Local.GetComponent<PlayerController>();
+	[Sync] public NetDictionary<ItemDefinition, int> Items { get; set; } = new();
 	
 	protected override void OnFixedUpdate()
 	{
