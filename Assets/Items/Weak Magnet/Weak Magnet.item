@@ -1,18 +1,18 @@
 {
   "Name": "Weak Magnet",
-  "Description": "slightly Increases magnet strength",
-  "ItemComponent": "Coffee",
+  "Description": "Increases pickup range by 10%",
+  "ItemComponent": "WeakMagnet",
   "Rarity": "Common",
   "Prefab": {
     "_type": "gameobject",
-    "prefab": "items/weak magnet.prefab"
+    "prefab": "items/weak magnet/weak magnet.prefab"
   },
   "Tilted": true,
   "Icon": {
     "$compiler": "texture",
     "$source": "imagefile",
     "data": {
-      "FilePath": "materials/editor/info_teleport_magnet.tga",
+      "FilePath": "items/weak magnet/magnet-icon.png",
       "MaxSize": 4096,
       "ConvertHeightToNormals": false,
       "NormalScale": 1,

@@ -9,10 +9,11 @@
 	<div class="chest">
 		<div class="item-section">
 			<Image Texture=@ShownItem.Icon class="item-render"/>
+			<div class="@(timeSinceStart > TimeToOpen ? "" : "hidden")">@ShownItem.Name</div>
 		</div>
 		<div class="options">
-			<div class="reject" onclick=@(() => Destroy())>Reject</div>
-			<div class="accept" onclick=@(() => Destroy())>Accept</div>
+			<div class="reject" onclick=@(() => Reject())>Reject</div>
+			<div class="accept" onclick=@(() => Accept())>Accept</div>
 		</div>
 	</div>
 </root>
@@ -22,22 +23,39 @@
 	public List<ItemDefinition> PotentialItems { get; set; } = new();
 	public ItemDefinition SelectedItem => PotentialItems.First();
 	public ItemDefinition ShownItem = new ItemDefinition();
+	RealTimeSince timeSinceStart = 0;
+	int TimeToOpen = 2;
 
 	protected override void OnStart()
 	{
 		GameTask.RunInThreadAsync(async () =>
         {
-			RealTimeSince timeSinceStart = 0;
-			while( timeSinceStart < 3 )
-			{
-				for( var y = 0; y < PotentialItems.Count; y++ )
-				{
-					await GameTask.Delay(50);
-					ShownItem = PotentialItems[y];
-				}
-			}
-			ShownItem = SelectedItem;
+	    	int currentIndex = 0;
+
+	    	while ( timeSinceStart < TimeToOpen )
+	    	{
+	    	    float progress = timeSinceStart / TimeToOpen;
+	    	    int delay = (int)MathX.Lerp( 100, 300, progress );
+	    	    ShownItem = PotentialItems[currentIndex];
+	    	    currentIndex = (currentIndex + 1) % PotentialItems.Count;
+	    	    await GameTask.Delay( delay );
+	    	}
+
+	    	ShownItem = SelectedItem;
+			await GameTask.MainThread();
         });
 	}
+
+	public void Accept()
+	{
+		MagnetPlayer.Local.GiveItem( SelectedItem );
+		Destroy();
+	}
+
+	public void Reject()
+	{
+		Destroy();
+	}
+
 	protected override int BuildHash() => System.HashCode.Combine( ShownItem );
 }

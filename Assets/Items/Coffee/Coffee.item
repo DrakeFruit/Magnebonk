@@ -5,56 +5,43 @@
   "Rarity": "Common",
   "Prefab": {
     "_type": "gameobject",
-    "prefab": "items/coffee.prefab"
+    "prefab": "items/coffee/coffee.prefab"
   },
   "Tilted": true,
   "Icon": {
     "$compiler": "texture",
-    "$source": "text",
+    "$source": "imagefile",
     "data": {
-      "Size": "128,128",
-      "Margin": {
+      "FilePath": "items/coffee/coffee-icon.png",
+      "MaxSize": 4096,
+      "ConvertHeightToNormals": false,
+      "NormalScale": 1,
+      "Rotate": 0,
+      "FlipVertical": false,
+      "FlipHorizontal": false,
+      "Cropping": {
         "Left": 0,
         "Top": 0,
         "Right": 0,
         "Bottom": 0
       },
-      "TextFlags": "Center, DontClip",
-      "TextScope": {
-        "Text": "Co",
-        "TextColor": "1,1,1,1",
-        "FontName": "Roboto",
-        "FontSize": 64,
-        "FontWeight": 400,
-        "FontItalic": false,
-        "LineHeight": 1,
-        "LetterSpacing": 0,
-        "WordSpacing": 0,
-        "FilterMode": "Bilinear",
-        "FontSmooth": "Auto",
-        "Outline": {
-          "Enabled": false,
-          "Size": 4,
-          "Color": "0,0,1,1"
-        },
-        "Shadow": {
-          "Enabled": false,
-          "Size": 4,
-          "Color": "0,0,0,1",
-          "Offset": "4,4"
-        },
-        "OutlineUnder": {
-          "Enabled": false,
-          "Size": 4,
-          "Color": "0,1,0,1"
-        },
-        "ShadowUnder": {
-          "Enabled": false,
-          "Size": 4,
-          "Color": "0,0,0,1",
-          "Offset": "4,4"
-        }
-      }
+      "Padding": {
+        "Left": 0,
+        "Top": 0,
+        "Right": 0,
+        "Bottom": 0
+      },
+      "InvertColor": false,
+      "Tint": "1,1,1,1",
+      "Blur": 0,
+      "Sharpen": 0,
+      "Brightness": 1,
+      "Contrast": 1,
+      "Saturation": 1,
+      "Hue": 0,
+      "Colorize": false,
+      "TargetColor": "1,1,1,1",
+      "CacheToDisk": true
     },
     "compiled": null
   },

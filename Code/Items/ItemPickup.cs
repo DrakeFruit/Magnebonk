@@ -8,18 +8,17 @@ public class ItemPickup : Component, Component.ITriggerListener
 	[RequireComponent] SphereCollider Collider { get; set; }
 	[RequireComponent] HighlightOutline Highlight { get; set; }
 	public PlayerController Controller { get; set; }
-	public MagnetPlayer Player { get; set; }
 	protected override void OnStart()
 	{
 		LocalPosition += Vector3.Up * 5f;
 		if ( Definition.Tilted ) LocalRotation = LocalRotation.Angles().WithPitch( -15 );
 
-		var radius = 25;
 		Collider.IsTrigger = true;
-		Collider.Radius = radius;
-		Collider.Center = new Vector3(0, 0, radius / 2 );
+		Collider.Radius = MagnetPlayer.Local.PickupRadius;
+		Collider.Center = new Vector3(0, 0, MagnetPlayer.Local.PickupRadius / 2 );
 
 		Highlight.Color = ItemDefinition.RarityToColor( Definition.Rarity );
+		Highlight.ObscuredColor = Color.Transparent;
 	}
 
 	protected override void OnFixedUpdate()
@@ -29,16 +28,9 @@ public class ItemPickup : Component, Component.ITriggerListener
 
 	public virtual void OnTriggerEnter( GameObject other )
 	{
-		Controller = other.GetComponent<PlayerController>();
-		Player = other.GetComponent<MagnetPlayer>();
-		if ( !Controller.IsValid() || !Player.IsValid() ) return;
+		if ( !other.Components.TryGet<MagnetPlayer>( out var player ) ) return;
 
-		var type = TypeLibrary.GetType( Definition.ItemComponent );
-		var comp = Player.Components.Create( type );
-		if ( comp is Item item )
-		{
-			item.Definition = Definition;
-		}
+		MagnetPlayer.Local.GiveItem( Definition );
 		GameObject.Destroy();
 	}
 }

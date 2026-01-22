@@ -1,0 +1,21 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Cartoon Magnet",
+      "Type": "model",
+      "Org": "drakefruit",
+      "Ident": "magnet",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "items/weak magnet/magnet.vmdl"
+      }
+    }
+  }
+}

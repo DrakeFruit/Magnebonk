@@ -165,6 +165,19 @@
           "Strength": 1,
           "Threshold": 1.6262976,
           "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ScreenSpaceReflections",
+          "__guid": "13c308c2-bb40-40ff-8640-5c7e799fff7d",
+          "__enabled": true,
+          "Flags": 0,
+          "Denoise": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ],
       "Children": []

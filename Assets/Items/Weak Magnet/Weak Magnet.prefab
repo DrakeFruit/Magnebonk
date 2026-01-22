@@ -20,7 +20,7 @@
         "__guid": "2c79a230-0aef-4579-9bcf-08e73e0ba766",
         "__enabled": true,
         "Flags": 0,
-        "Definition": "items/weak magnet.item",
+        "Definition": "items/weak magnet/weak magnet.item",
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -33,7 +33,7 @@
         "__guid": "ed2b8a78-5dbc-47ae-89a4-f9d836194d78",
         "__enabled": true,
         "Flags": 0,
-        "Center": "0,0,0",
+        "Center": "0,0,30",
         "ColliderFlags": 0,
         "Elasticity": null,
         "Friction": null,
@@ -63,7 +63,7 @@
         "InsideColor": "0,0,0,0",
         "InsideObscuredColor": "0,0,0,0",
         "Material": null,
-        "ObscuredColor": "0,0,0,0.4",
+        "ObscuredColor": "0,0,0,0",
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -75,7 +75,54 @@
         "Width": 0.25
       }
     ],
-    "Children": [],
+    "Children": [
+      {
+        "__guid": "d0701260-c229-468f-9fd6-e1d075dacfb6",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "model",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "3,3,3",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "38fa4cb5-f7da-4209-8e3c-43828e3d4590",
+            "__enabled": true,
+            "Flags": 0,
+            "BodyGroups": 18446744073709551615,
+            "CreateAttachments": false,
+            "LodOverride": null,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Materials": null,
+            "Model": "items/weak magnet/magnet.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": []
+      }
+    ],
     "__properties": {
       "NetworkInterpolation": true,
       "TimeScale": 1,

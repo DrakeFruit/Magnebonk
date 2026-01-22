@@ -25,6 +25,7 @@ ChestUI
 
 		.item-section
 		{
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			width: 100%;
@@ -95,5 +96,11 @@ ChestUI
 				}
 			}
 		}
+	}
+
+	.hidden
+	{
+		opacity: 0;
+		pointer-events: none;
 	}
 }

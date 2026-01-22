@@ -2,409 +2,6 @@
   "__guid": "2667bd4d-e6b5-403f-b65e-65d1aa92f14a",
   "GameObjects": [
     {
-      "__guid": "c8d1346b-0938-43a2-9ce7-fe2bb3c0b8a7",
-      "__version": 2,
-      "Flags": 0,
-      "Name": "Player Controller",
-      "Position": "0,0,0",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkFlags": 0,
-      "NetworkOrphaned": 0,
-      "NetworkTransmit": true,
-      "OwnerTransfer": 1,
-      "Components": [
-        {
-          "__type": "MagnetPlayer",
-          "__guid": "89a52e64-2fba-4c77-8d1e-208bc18977f0",
-          "__enabled": true,
-          "Flags": 0,
-          "CoinMultiplier": 1,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "PickupRadius": 30
-        },
-        {
-          "__type": "Sandbox.PlayerController",
-          "__guid": "9225cb69-d5d3-4627-95e5-37387b9c853f",
-          "__enabled": true,
-          "Flags": 0,
-          "AccelerationTime": 0,
-          "AimStrengthBody": 1,
-          "AimStrengthEyes": 1,
-          "AimStrengthHead": 1,
-          "AirFriction": 0.1,
-          "AltMoveButton": "run",
-          "Body": {
-            "_type": "component",
-            "component_id": "25cf2373-0bf4-485a-af26-ef9d59e3ebd2",
-            "go": "c8d1346b-0938-43a2-9ce7-fe2bb3c0b8a7",
-            "component_type": "Rigidbody"
-          },
-          "BodyCollisionTags": null,
-          "BodyHeight": 72,
-          "BodyMass": 500,
-          "BodyRadius": 16,
-          "BrakePower": 1,
-          "CameraOffset": "256,0,12",
-          "ColliderObject": {
-            "_type": "gameobject",
-            "go": "55d5f625-eaf5-4b2a-9367-06ef675b620c"
-          },
-          "DeaccelerationTime": 0,
-          "DuckedHeight": 36,
-          "DuckedSpeed": 70,
-          "EnableFootstepSounds": true,
-          "EnablePressing": true,
-          "EyeDistanceFromTop": 8,
-          "FootstepMixer": {
-            "Name": "unknown",
-            "Id": "00000000-0000-0000-0000-000000000000"
-          },
-          "FootstepVolume": 1,
-          "HideBodyInFirstPerson": true,
-          "JumpSpeed": 300,
-          "LookSensitivity": 1,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "PitchClamp": 90,
-          "ReachLength": 130,
-          "Renderer": {
-            "_type": "component",
-            "component_id": "addb2f2c-dd1d-48aa-afe8-40d02cb83195",
-            "go": "8344d30d-9d23-4210-8b51-90b5f765363d",
-            "component_type": "SkinnedModelRenderer"
-          },
-          "RotateWithGround": true,
-          "RotationAngleLimit": 45,
-          "RotationSpeed": 1,
-          "RunByDefault": false,
-          "RunSpeed": 320,
-          "ShowColliderComponents": false,
-          "ShowRigidbodyComponent": false,
-          "ThirdPerson": true,
-          "ToggleCameraModeButton": "view",
-          "UseAnimatorControls": true,
-          "UseButton": "use",
-          "UseCameraControls": true,
-          "UseFovFromPreferences": true,
-          "UseInputControls": true,
-          "UseLookControls": true,
-          "WalkSpeed": 110
-        },
-        {
-          "__type": "Sandbox.Rigidbody",
-          "__guid": "25cf2373-0bf4-485a-af26-ef9d59e3ebd2",
-          "__enabled": true,
-          "Flags": 1,
-          "AngularDamping": 1,
-          "EnableImpactDamage": true,
-          "EnhancedCcd": false,
-          "Gravity": true,
-          "GravityScale": 1,
-          "ImpactDamage": 0,
-          "LinearDamping": 0.1,
-          "Locking": {
-            "X": false,
-            "Y": false,
-            "Z": false,
-            "Pitch": true,
-            "Yaw": true,
-            "Roll": true
-          },
-          "MassCenterOverride": "0,0,36",
-          "MassOverride": 500,
-          "MinImpactDamageSpeed": 500,
-          "MotionEnabled": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OverrideMassCenter": true,
-          "RigidbodyFlags": "DisableCollisionSounds",
-          "StartAsleep": false
-        },
-        {
-          "__type": "Sandbox.Movement.MoveModeWalk",
-          "__guid": "f04ef788-6e69-4f2d-9125-8c60a18cade3",
-          "__enabled": true,
-          "Flags": 0,
-          "GroundAngle": 45,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Priority": 0,
-          "StepDownHeight": 18,
-          "StepUpHeight": 18
-        },
-        {
-          "__type": "Sandbox.Movement.MoveModeSwim",
-          "__guid": "bdda7231-8e43-4a45-ad6a-80c2a117bf7e",
-          "__enabled": true,
-          "Flags": 0,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Priority": 10,
-          "SwimLevel": 0.7
-        },
-        {
-          "__type": "Sandbox.Movement.MoveModeLadder",
-          "__guid": "db036f69-d5f0-41a6-988d-8da6d1a55ba9",
-          "__enabled": true,
-          "Flags": 0,
-          "ClimbableTags": "ladder",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Priority": 5,
-          "Speed": 1
-        },
-        {
-          "__type": "Sandbox.Dresser",
-          "__guid": "9be63ddf-17d9-4fba-b4ee-54059d9d27c5",
-          "__enabled": true,
-          "Flags": 0,
-          "ApplyHeightScale": true,
-          "BodyTarget": {
-            "_type": "component",
-            "component_id": "addb2f2c-dd1d-48aa-afe8-40d02cb83195",
-            "go": "8344d30d-9d23-4210-8b51-90b5f765363d",
-            "component_type": "SkinnedModelRenderer"
-          },
-          "Clothing": [],
-          "ManualAge": 0.5,
-          "ManualHeight": 0.5,
-          "ManualTint": 0.5,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Source": "OwnerConnection",
-          "WorkshopItems": []
-        },
-        {
-          "__type": "Sandbox.HullCollider",
-          "__guid": "295e157a-a2b6-4d32-9d00-2f24d59f10e2",
-          "__enabled": true,
-          "Flags": 0,
-          "BoxSize": "50,50,50",
-          "Center": "0,0,50",
-          "ColliderFlags": 0,
-          "Elasticity": null,
-          "Friction": null,
-          "Height": 100,
-          "IsTrigger": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnObjectTriggerEnter": null,
-          "OnObjectTriggerExit": null,
-          "OnTriggerEnter": null,
-          "OnTriggerExit": null,
-          "Points": [],
-          "Radius": 125,
-          "Radius2": 0,
-          "RollingResistance": null,
-          "Slices": 7,
-          "Static": false,
-          "Surface": null,
-          "SurfaceVelocity": "0,0,0",
-          "Type": "Cylinder"
-        }
-      ],
-      "Children": [
-        {
-          "__guid": "8344d30d-9d23-4210-8b51-90b5f765363d",
-          "__version": 2,
-          "Flags": 0,
-          "Name": "Body",
-          "Position": "0,0,0",
-          "Rotation": "0,0,0,1",
-          "Scale": "1,1,1",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkFlags": 0,
-          "NetworkOrphaned": 0,
-          "NetworkTransmit": true,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "addb2f2c-dd1d-48aa-afe8-40d02cb83195",
-              "__enabled": true,
-              "Flags": 0,
-              "AnimationGraph": null,
-              "BodyGroups": 341,
-              "BoneMergeTarget": null,
-              "CreateAttachments": false,
-              "CreateBoneObjects": false,
-              "LodOverride": null,
-              "MaterialGroup": "default",
-              "MaterialOverride": null,
-              "Materials": null,
-              "Model": "models/citizen/citizen.vmdl",
-              "Morphs": {},
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Parameters": {
-                "bools": {},
-                "ints": {},
-                "floats": {},
-                "vectors": {},
-                "rotations": {}
-              },
-              "PlaybackRate": 1,
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Sequence": {
-                "Name": null,
-                "Looping": true,
-                "Blending": false
-              },
-              "Tint": "1,1,1,1",
-              "UseAnimGraph": true
-            },
-            {
-              "__type": "Sandbox.Dresser",
-              "__guid": "4493598f-9f09-4b4e-accc-1543f599d0ea",
-              "__enabled": true,
-              "Flags": 0,
-              "ApplyHeightScale": true,
-              "BodyTarget": {
-                "_type": "component",
-                "component_id": "addb2f2c-dd1d-48aa-afe8-40d02cb83195",
-                "go": "8344d30d-9d23-4210-8b51-90b5f765363d",
-                "component_type": "SkinnedModelRenderer"
-              },
-              "Clothing": [],
-              "ManualAge": 0.5,
-              "ManualHeight": 0.5,
-              "ManualTint": 0.5,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Source": "OwnerConnection",
-              "WorkshopItems": []
-            }
-          ],
-          "Children": []
-        },
-        {
-          "__guid": "55d5f625-eaf5-4b2a-9367-06ef675b620c",
-          "__version": 2,
-          "Flags": 1,
-          "Name": "Colliders",
-          "Position": "0,0,0",
-          "Rotation": "0,0,0,1",
-          "Scale": "1,1,1",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkFlags": 0,
-          "NetworkOrphaned": 0,
-          "NetworkTransmit": true,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.CapsuleCollider",
-              "__guid": "9099f756-7720-4f72-bb6d-56c3886960b6",
-              "__enabled": true,
-              "Flags": 1,
-              "ColliderFlags": 0,
-              "Elasticity": null,
-              "End": "0,0,36",
-              "Friction": 0,
-              "IsTrigger": false,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "Radius": 11.313708,
-              "RollingResistance": null,
-              "Start": "0,0,60.68629",
-              "Static": false,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            },
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "5c119aeb-ff97-4831-8271-9069fed43dbc",
-              "__enabled": true,
-              "Flags": 1,
-              "Center": "0,0,18",
-              "ColliderFlags": 0,
-              "Elasticity": null,
-              "Friction": 0,
-              "IsTrigger": false,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "RollingResistance": null,
-              "Scale": "16,16,36",
-              "Static": false,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            }
-          ],
-          "Children": []
-        }
-      ]
-    },
-    {
       "__guid": "b5659796-077c-48d8-974b-1f636bae37a1",
       "__version": 2,
       "Flags": 0,
@@ -654,7 +251,7 @@
       "__version": 2,
       "Flags": 0,
       "Name": "2D Skybox",
-      "Position": "36.99741,286.4027,102.8555",
+      "Position": "0,0,192",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "skybox",
@@ -684,571 +281,6 @@
       "Children": []
     },
     {
-      "__guid": "b34c8a31-ed47-4b16-9870-78b2c7246e08",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "-128,-256,0"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "b34c8a31-ed47-4b16-9870-78b2c7246e08",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "4c28796d-ec6c-4fd4-8b56-668199347be6",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "fb08a9e8-f307-462a-9173-e432c6b44e81",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "411c2403-f54a-4009-b22f-0f57257cba29",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "569ca224-3a0b-41c8-8b05-6c321afcf7c6"
-      }
-    },
-    {
-      "__guid": "e06fc883-16d6-4d49-99ab-cd5c88e25f90",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (1)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "-128,-192,0"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "e06fc883-16d6-4d49-99ab-cd5c88e25f90",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "c8cb08d6-f008-414c-966b-597cd9eb8dda",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "b604c41a-514b-4ac7-bcfb-c909b916848e",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "ecb9c745-4022-4622-ab86-e75631931721",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "1839751d-bff6-467c-9eb0-a1da35d2c8e1"
-      }
-    },
-    {
-      "__guid": "e0bb7eb8-a1c0-48b3-8070-9a1a6e79bec8",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (2)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "0,-192,0"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "e0bb7eb8-a1c0-48b3-8070-9a1a6e79bec8",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "0e924746-6482-4d84-a76b-46c513dc1ac9",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "65ed2283-0791-4a54-988c-a6235c81d227",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "66c864cb-373b-4cb0-aee5-95dc95f7e9a7",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "d0a4be19-24fe-4276-a974-4ca12866952f"
-      }
-    },
-    {
-      "__guid": "d3333fca-a2a6-437e-a905-d9ab2321de61",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (5)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "-63.99999,-416,0"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "d3333fca-a2a6-437e-a905-d9ab2321de61",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "b9a08976-a968-4a0d-bb7a-fecaeeaa2649",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "1e4a9c82-932e-4fa4-b454-c4fe15429026",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "963f970d-60de-4747-b309-ff8e56b2705e",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "74b4d20a-4f11-48cc-b3cf-1449a8a0acef"
-      }
-    },
-    {
-      "__guid": "5d00fa3d-fd02-480f-9188-4f62a941145c",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (4)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "-63.99999,-352,0"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "5d00fa3d-fd02-480f-9188-4f62a941145c",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "25c85194-084f-42e8-85fc-a30674a5c112",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "55f085f5-4212-4a51-b970-23b5a2ebe7c0",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "b5624055-bf9b-487f-912c-de1c86aa9bd5",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "20a25a62-a4ba-44bc-a928-3dfae147d269"
-      }
-    },
-    {
-      "__guid": "18347bb0-f95b-4376-8ddd-a854fbe865d0",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (3)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "63.99999,-352,0"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "18347bb0-f95b-4376-8ddd-a854fbe865d0",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "0af2973e-86b9-4fe6-a974-935284019bfb",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "3c377ba6-3b0b-4ea5-997a-4f240c43c385",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "74ec32de-a877-4390-861f-f8311e7782f0",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "3141df04-1975-4be1-bb7b-3c88306f5922"
-      }
-    },
-    {
-      "__guid": "3e336502-6869-4d7c-a617-02947755b8a3",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (8)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "0.000007629395,-288,0"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "3e336502-6869-4d7c-a617-02947755b8a3",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "de363b19-b152-400f-ab68-654edd46a768",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "4df734d9-2aa7-4477-9752-066c9f494f63",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "8f1b15ed-d11d-43c1-acdf-87487b6516a7",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "997671ca-83d4-413a-8b6d-cce08e0bfe71"
-      }
-    },
-    {
-      "__guid": "c3c71abb-ae5f-4caf-8210-e04365ffe480",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (7)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "0.000007629395,-224,0"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "c3c71abb-ae5f-4caf-8210-e04365ffe480",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "f94db3f2-03cc-48f1-95f7-ca428f9e9d1a",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "38513c9b-70df-4a9f-901d-fce3fe06507f",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "d47b4d44-afa7-438c-8bcc-ef08c0298477",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "2a5199af-8c7d-42f7-ab25-e6498887b2c0"
-      }
-    },
-    {
-      "__guid": "e3865a28-dd4a-49f9-9c14-035b8170e9b2",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (6)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "128,-224,0"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "e3865a28-dd4a-49f9-9c14-035b8170e9b2",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "0b852ae2-939f-4344-ac90-77c0ef081e17",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "3662da9c-9d22-4aa2-9435-513131d1b421",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "3bb4b266-e4ac-40e4-a435-634814836356",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "df7fb820-a25a-4fec-b4e9-ec54de82882c"
-      }
-    },
-    {
-      "__guid": "2ed319d1-216c-431c-b27b-929d1e007786",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (11)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "111.474,-437.537,0"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0.7933533,0.6087615"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "2ed319d1-216c-431c-b27b-929d1e007786",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "48fca7fe-a4e0-4d1f-9b96-93675a734335",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "3871d24e-a1f4-410b-8660-c7d235dc5430",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "8206a7c1-45c9-44d1-821e-25ec082ec133",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "c1a1af02-1a2d-4683-a2b5-5be1cdb16fd7"
-      }
-    },
-    {
-      "__guid": "ba2888fe-3ca8-4cc9-a06e-17fb7d561dbf",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (10)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "49.65478,-454.1014,0"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0.7933533,0.6087615"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "ba2888fe-3ca8-4cc9-a06e-17fb7d561dbf",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "56ae79e6-e49c-466d-a934-a62ff1e2cfa4",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "b666892b-0ba8-4722-838e-4cfd16fe4e9f",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "46850d50-23d6-4be4-86e1-bf889d1eabaf",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "5598e7fd-af8e-49d3-b369-2f771e01e60e"
-      }
-    },
-    {
-      "__guid": "b41aca42-b2cc-43cf-96e0-43a61299326a",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (9)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "16.52596,-330.463,0"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0.7933533,0.6087615"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "b41aca42-b2cc-43cf-96e0-43a61299326a",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "ad49a953-6167-4e7b-a4e8-3541e49f99d6",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "f91637b6-d7ab-49b5-94b1-2e1a10e731a3",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "8211864c-7d03-417a-bbf2-509f44d21676",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "4500f25e-88e0-4a1d-90ad-9aa82f982ab1"
-      }
-    },
-    {
-      "__guid": "92c7617c-ec03-4bb5-8f43-5a2b0925a0d4",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (14)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "-144.526,-365.2549,0.00001525879"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0.7933533,0.6087615"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "92c7617c-ec03-4bb5-8f43-5a2b0925a0d4",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "3f749851-d042-427e-b1b1-c2b3654f28ec",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "9814378a-6376-4898-87e3-82914f93e89a",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "40063f8b-7c80-494a-ac18-987cc638dbe0",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "ad1b1890-6538-4fe6-a7ed-37aeb31f543f"
-      }
-    },
-    {
-      "__guid": "ebe735c2-36bb-47d8-9220-ce8c2e891886",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (13)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "-206.3452,-381.8192,0.00001525879"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0.7933533,0.6087615"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "ebe735c2-36bb-47d8-9220-ce8c2e891886",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "109c6854-b7ab-473e-8e3e-95846a33795a",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "1d7fb912-0a04-4e3c-a196-5e99c8ab5f03",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "e1af29d9-04a7-47fb-a0e9-88879ee560d2",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "43737981-f07c-4e1b-a407-910ab68e953d"
-      }
-    },
-    {
-      "__guid": "ade70c98-7c0f-4455-88a6-b0c11b1e7d14",
-      "__version": 2,
-      "__Prefab": "prefabs/coin.prefab",
-      "__PrefabInstancePatch": {
-        "AddedObjects": [],
-        "RemovedObjects": [],
-        "PropertyOverrides": [
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Name",
-            "Value": "coin (12)"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Position",
-            "Value": "-239.474,-258.1808,0.00001525879"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c0d6f922-fb74-4466-a670-c8c63aa02947"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0.7933533,0.6087615"
-          }
-        ],
-        "MovedObjects": []
-      },
-      "__PrefabIdToInstanceId": {
-        "c0d6f922-fb74-4466-a670-c8c63aa02947": "ade70c98-7c0f-4455-88a6-b0c11b1e7d14",
-        "13eb2c86-a5d7-4113-af09-5c80a7586b8b": "052b5a71-ac44-47ed-b46a-d1fee321ad30",
-        "467d8a41-f185-48ea-a452-0ff8370b663a": "bf84d15a-3c89-4255-9a98-942d33fd644b",
-        "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b": "5a2b32ec-a7dc-4123-875c-72ee35fc7efc",
-        "6e2cb53c-44df-4bbb-a12e-38acae7f7702": "d67ca3f4-c15e-4eab-95d1-5ee86ac8e1ab"
-      }
-    },
-    {
       "__guid": "e7262391-bf0e-45fe-9b1c-a8388857ef76",
       "__version": 2,
       "Flags": 0,
@@ -1269,7 +301,7 @@
           "__guid": "6a96f555-f33d-42a8-a93f-e67a0294f7d1",
           "__enabled": true,
           "Flags": 0,
-          "ItemDefinition": "items/coffee.item",
+          "ItemDefinition": "items/weak magnet/weak magnet.item",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -1301,7 +333,7 @@
           "__guid": "211c9ffd-fec1-46e3-9015-09a247f1a6f9",
           "__enabled": true,
           "Flags": 0,
-          "ItemDefinition": "items/coffee.item",
+          "ItemDefinition": "items/weak magnet/weak magnet.item",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -1333,7 +365,7 @@
           "__guid": "b703448e-5a90-4798-a4f5-7e79ea9e4d1f",
           "__enabled": true,
           "Flags": 0,
-          "ItemDefinition": "items/coffee.item",
+          "ItemDefinition": "items/weak magnet/weak magnet.item",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -1347,9 +379,114 @@
     {
       "__guid": "9e03bdfb-acf0-42dd-8294-c0a439eed02c",
       "__version": 2,
+      "__Prefab": "prefabs/chest.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3de6514c-d297-436d-ae76-09448e735d93"
+            },
+            "Property": "Name",
+            "Value": "Chest"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3de6514c-d297-436d-ae76-09448e735d93"
+            },
+            "Property": "Position",
+            "Value": "-128,-64,0"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "3de6514c-d297-436d-ae76-09448e735d93": "9e03bdfb-acf0-42dd-8294-c0a439eed02c",
+        "11f3e823-4b19-48f1-b85e-3e38ab271dd9": "53fed9b4-8df5-4cb6-85f1-5c5de41f090b",
+        "c6e9fdc9-7d6c-4d44-84cb-c22db42b6519": "dd14cd90-c722-4135-bdd6-22724d74e2a7",
+        "2c217585-a851-4d22-be8e-ce794af82a29": "dd10fd90-1a4e-4574-b298-d3b18346dd17",
+        "770f93c6-c09d-4660-984f-05d9cde3a088": "38c2cb41-ff36-4da5-9a8a-79a472851ceb"
+      }
+    },
+    {
+      "__guid": "bcd593d6-dc3a-4a8b-968b-eafb208e5ecc",
+      "__version": 2,
+      "__Prefab": "prefabs/chest.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3de6514c-d297-436d-ae76-09448e735d93"
+            },
+            "Property": "Name",
+            "Value": "Chest (1)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3de6514c-d297-436d-ae76-09448e735d93"
+            },
+            "Property": "Position",
+            "Value": "-128,0,0"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "3de6514c-d297-436d-ae76-09448e735d93": "bcd593d6-dc3a-4a8b-968b-eafb208e5ecc",
+        "11f3e823-4b19-48f1-b85e-3e38ab271dd9": "617fd288-2ca9-4e6b-a206-9a4aa1b8324d",
+        "c6e9fdc9-7d6c-4d44-84cb-c22db42b6519": "27eed92a-8a40-4994-aab6-960864a080d9",
+        "2c217585-a851-4d22-be8e-ce794af82a29": "2ac40fbb-a5b9-4b61-b951-f215e4673cb1",
+        "770f93c6-c09d-4660-984f-05d9cde3a088": "9570028f-540f-4ec0-b412-e82cce3579bd"
+      }
+    },
+    {
+      "__guid": "5d7c445a-e2d9-44d2-8a9c-167a32993dc8",
+      "__version": 2,
+      "__Prefab": "prefabs/chest.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3de6514c-d297-436d-ae76-09448e735d93"
+            },
+            "Property": "Name",
+            "Value": "Chest (2)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3de6514c-d297-436d-ae76-09448e735d93"
+            },
+            "Property": "Position",
+            "Value": "-128,64,0"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "3de6514c-d297-436d-ae76-09448e735d93": "5d7c445a-e2d9-44d2-8a9c-167a32993dc8",
+        "11f3e823-4b19-48f1-b85e-3e38ab271dd9": "cbaa7ed0-823d-431a-bd84-0079c1f288de",
+        "c6e9fdc9-7d6c-4d44-84cb-c22db42b6519": "33235a0c-d312-4549-a3ea-9e7a160c8445",
+        "2c217585-a851-4d22-be8e-ce794af82a29": "1ff722e0-6013-40e3-967d-300471ded7a2",
+        "770f93c6-c09d-4660-984f-05d9cde3a088": "6c04af48-76e2-4797-88f3-443f71e5378f"
+      }
+    },
+    {
+      "__guid": "10bf4ebc-ffdf-4ce4-ab90-20ea6d177e44",
+      "__version": 2,
       "Flags": 0,
-      "Name": "Cube",
-      "Position": "205.354,89.29874,24.99424",
+      "Name": "Network Manager",
+      "Position": "0,0,0",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -1361,35 +498,50 @@
       "OwnerTransfer": 1,
       "Components": [
         {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "4627e51d-66b7-497e-bbdc-29ac1a79a308",
+          "__type": "Sandbox.NetworkHelper",
+          "__guid": "8939cef2-77cf-459f-abe2-2dcec60caa6e",
           "__enabled": true,
           "Flags": 0,
-          "BodyGroups": 18446744073709551615,
-          "CreateAttachments": false,
-          "LodOverride": null,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Materials": null,
-          "Model": "models/dev/box.vmdl",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null,
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
+          "PlayerPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/player.prefab"
           },
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
+          "SpawnPoints": [
+            {
+              "_type": "gameobject",
+              "go": "10bf4ebc-ffdf-4ce4-ab90-20ea6d177e44"
+            }
+          ],
+          "StartServer": true
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "732dbfaa-bddf-411c-86a7-6fb4cf9b5eb7",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Coin Spawner",
+      "Position": "-119.6861,53.6653,-3.854301",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
         {
-          "__type": "Chest",
-          "__guid": "53fed9b4-8df5-4cb6-85f1-5c5de41f090b",
+          "__type": "CoinSpawner",
+          "__guid": "0a6ca519-86a1-4a72-a048-fccb11439517",
           "__enabled": true,
           "Flags": 0,
           "OnComponentDestroy": null,
@@ -1398,54 +550,9 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "cf89968f-5c05-4bf7-aa37-3acea3b9f447",
-          "__enabled": true,
-          "Flags": 0,
-          "Center": "0,0,0",
-          "ColliderFlags": 0,
-          "Elasticity": null,
-          "Friction": null,
-          "IsTrigger": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnObjectTriggerEnter": null,
-          "OnObjectTriggerExit": null,
-          "OnTriggerEnter": null,
-          "OnTriggerExit": null,
-          "RollingResistance": null,
-          "Scale": "50,50,50",
-          "Static": true,
-          "Surface": null,
-          "SurfaceVelocity": "0,0,0"
         }
       ],
-      "Children": [
-        {
-          "__guid": "dd14cd90-c722-4135-bdd6-22724d74e2a7",
-          "__version": 2,
-          "Flags": 0,
-          "Name": "Model",
-          "Position": "0,0,0",
-          "Rotation": "0,0,0,1",
-          "Scale": "1,1,1",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkFlags": 0,
-          "NetworkOrphaned": 0,
-          "NetworkTransmit": true,
-          "OwnerTransfer": 1,
-          "Components": [],
-          "Children": []
-        }
-      ]
+      "Children": []
     }
   ],
   "SceneProperties": {
