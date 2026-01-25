@@ -7,7 +7,7 @@
       "Flags": 0,
       "Name": "Sun",
       "Position": "0,0,122.1665",
-      "Rotation": "-0.4267767,0.1476927,0.5561861,0.6976427",
+      "Rotation": "-0.1766847,0.4156128,-0.1444416,0.8804461",
       "Scale": "1,1,1",
       "Tags": "light_directional,light",
       "Enabled": true,
@@ -24,7 +24,7 @@
           "Flags": 0,
           "FogMode": "Enabled",
           "FogStrength": 1,
-          "LightColor": "0.91373,0.98039,1,1",
+          "LightColor": "1.11047,1.2407,1.25,1",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -223,11 +223,11 @@
             "Maxs": "1829.494,2236.373,1000"
           },
           "DelayBetweenUpdates": 0.1,
-          "Feathering": 0.02,
+          "Feathering": 1.1206207,
           "FrameInterval": 5,
           "MaxDistance": 512,
           "Mode": "Realtime",
-          "MultiBounce": false,
+          "MultiBounce": true,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -238,7 +238,7 @@
           "Projection": "Box",
           "Resolution": "Small",
           "Texture": "textures/cubemaps/default2.vtex",
-          "TintColor": "1,1,1,1",
+          "TintColor": "2.6,2.6,2.6,1",
           "UpdateStrategy": "OnEnabled",
           "ZFar": 4096,
           "ZNear": 16
@@ -275,7 +275,7 @@
           "OnComponentUpdate": null,
           "SkyIndirectLighting": true,
           "SkyMaterial": "materials/skybox/rustig_koppie_puresky.vmat",
-          "Tint": "1,1,1,1"
+          "Tint": "1.25,1.25,1.25,1"
         }
       ],
       "Children": []
@@ -408,7 +408,10 @@
         "11f3e823-4b19-48f1-b85e-3e38ab271dd9": "53fed9b4-8df5-4cb6-85f1-5c5de41f090b",
         "c6e9fdc9-7d6c-4d44-84cb-c22db42b6519": "dd14cd90-c722-4135-bdd6-22724d74e2a7",
         "2c217585-a851-4d22-be8e-ce794af82a29": "dd10fd90-1a4e-4574-b298-d3b18346dd17",
-        "770f93c6-c09d-4660-984f-05d9cde3a088": "38c2cb41-ff36-4da5-9a8a-79a472851ceb"
+        "770f93c6-c09d-4660-984f-05d9cde3a088": "38c2cb41-ff36-4da5-9a8a-79a472851ceb",
+        "2f07a91e-2444-4914-b3ac-cd5d2e0ab03b": "fb5f023e-b959-4bcd-9109-f8c8fc1b4867",
+        "37c77022-d810-415b-94eb-31a417755652": "936ae7f0-5441-47b8-8da7-b660de9018a0",
+        "816a8bdd-b05d-4b06-8f01-5913e18ace97": "fe15918b-ad39-4d72-962b-73c781ba4674"
       }
     },
     {
@@ -443,7 +446,10 @@
         "11f3e823-4b19-48f1-b85e-3e38ab271dd9": "617fd288-2ca9-4e6b-a206-9a4aa1b8324d",
         "c6e9fdc9-7d6c-4d44-84cb-c22db42b6519": "27eed92a-8a40-4994-aab6-960864a080d9",
         "2c217585-a851-4d22-be8e-ce794af82a29": "2ac40fbb-a5b9-4b61-b951-f215e4673cb1",
-        "770f93c6-c09d-4660-984f-05d9cde3a088": "9570028f-540f-4ec0-b412-e82cce3579bd"
+        "770f93c6-c09d-4660-984f-05d9cde3a088": "9570028f-540f-4ec0-b412-e82cce3579bd",
+        "2f07a91e-2444-4914-b3ac-cd5d2e0ab03b": "335f1d1b-8915-4afc-a212-3c7bf972603e",
+        "37c77022-d810-415b-94eb-31a417755652": "0924914b-3217-47ec-81b9-c7293f4d3f8e",
+        "816a8bdd-b05d-4b06-8f01-5913e18ace97": "cc5277e7-8aae-45b8-9e9a-4ea1f9cf0019"
       }
     },
     {
@@ -478,7 +484,10 @@
         "11f3e823-4b19-48f1-b85e-3e38ab271dd9": "cbaa7ed0-823d-431a-bd84-0079c1f288de",
         "c6e9fdc9-7d6c-4d44-84cb-c22db42b6519": "33235a0c-d312-4549-a3ea-9e7a160c8445",
         "2c217585-a851-4d22-be8e-ce794af82a29": "1ff722e0-6013-40e3-967d-300471ded7a2",
-        "770f93c6-c09d-4660-984f-05d9cde3a088": "6c04af48-76e2-4797-88f3-443f71e5378f"
+        "770f93c6-c09d-4660-984f-05d9cde3a088": "6c04af48-76e2-4797-88f3-443f71e5378f",
+        "2f07a91e-2444-4914-b3ac-cd5d2e0ab03b": "e2c193ff-a02a-439c-b095-d80f5adc5b80",
+        "37c77022-d810-415b-94eb-31a417755652": "88734fac-3aef-4c73-9f52-29947c6c4dac",
+        "816a8bdd-b05d-4b06-8f01-5913e18ace97": "bf6e70c9-df3e-4baa-a0d6-ced5192bc67e"
       }
     },
     {
@@ -544,6 +553,10 @@
           "__guid": "0a6ca519-86a1-4a72-a048-fccb11439517",
           "__enabled": true,
           "Flags": 0,
+          "Coin": {
+            "_type": "gameobject",
+            "prefab": "prefabs/coins/penny/penny.prefab"
+          },
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,

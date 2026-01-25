@@ -1,26 +1,38 @@
 {
   "RootObject": {
-    "__guid": "c0d6f922-fb74-4466-a670-c8c63aa02947",
+    "__guid": "c3b96e42-ae2a-4436-b378-d7a94fcb915a",
     "__version": 2,
     "Flags": 0,
-    "Name": "Coin",
+    "Name": "penny",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
     "Tags": "",
     "Enabled": true,
-    "NetworkMode": 0,
+    "NetworkMode": 2,
     "NetworkFlags": 0,
     "NetworkOrphaned": 0,
     "NetworkTransmit": true,
     "OwnerTransfer": 1,
     "Components": [
       {
-        "__type": "Sandbox.SphereCollider",
-        "__guid": "13eb2c86-a5d7-4113-af09-5c80a7586b8b",
+        "__type": "Coin",
+        "__guid": "53a4245c-2fd6-4fe2-a96b-ce756fce1396",
         "__enabled": true,
         "Flags": 0,
-        "Center": "0,0,10",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      },
+      {
+        "__type": "Sandbox.SphereCollider",
+        "__guid": "139080e6-9167-41d5-9cbd-8200d3f2ffae",
+        "__enabled": true,
+        "Flags": 0,
+        "Center": "0,0,32",
         "ColliderFlags": 0,
         "Elasticity": null,
         "Friction": null,
@@ -35,34 +47,22 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
-        "Radius": 11.829893,
+        "Radius": 32,
         "RollingResistance": null,
-        "Static": true,
+        "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"
-      },
-      {
-        "__type": "Coin",
-        "__guid": "467d8a41-f185-48ea-a452-0ff8370b663a",
-        "__enabled": true,
-        "Flags": 0,
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null
       }
     ],
     "Children": [
       {
-        "__guid": "5bf538c7-0713-4297-90cd-8a8b4a0e5d7b",
+        "__guid": "789a75d4-aeed-42b0-8da2-109c268d91b9",
         "__version": 2,
         "Flags": 0,
         "Name": "Model",
-        "Position": "0,0,10",
-        "Rotation": "0,0,0,1",
-        "Scale": "1,1,1",
+        "Position": "0,0,12",
+        "Rotation": "0,-0.7071068,0,0.7071068",
+        "Scale": "3,3,3",
         "Tags": "",
         "Enabled": true,
         "NetworkMode": 2,
@@ -73,7 +73,7 @@
         "Components": [
           {
             "__type": "Sandbox.ModelRenderer",
-            "__guid": "6e2cb53c-44df-4bbb-a12e-38acae7f7702",
+            "__guid": "2df7d761-2142-4878-ad80-82ecee4bf504",
             "__enabled": true,
             "Flags": 0,
             "BodyGroups": 18446744073709551615,
@@ -82,7 +82,7 @@
             "MaterialGroup": null,
             "MaterialOverride": null,
             "Materials": null,
-            "Model": "models/sterling/smodel_coin/smodel_coin.vmdl",
+            "Model": "prefabs/coins/penny/terry-penny.vmdl",
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
@@ -101,15 +101,33 @@
         ],
         "Children": []
       }
-    ]
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      },
+      "GameObjectSystems": []
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,
   "MenuPath": null,
   "MenuIcon": null,
   "DontBreakAsTemplate": false,
-  "__references": [
-    "smd.dontbeweird3#2280"
-  ],
+  "__references": [],
   "__version": 2
 }

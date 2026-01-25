@@ -1,0 +1,21 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "s\u0026box Penny",
+      "Type": "model",
+      "Org": "drakefruit",
+      "Ident": "sboxpenny",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "prefabs/coins/penny/terry-penny.vmdl"
+      }
+    }
+  }
+}
