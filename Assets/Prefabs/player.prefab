@@ -28,7 +28,8 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "PickupRadius": 30
+        "PickupRadius": 30,
+        "PickupSound": "sounds/vine boom.sound"
       },
       {
         "__type": "Sandbox.PlayerController",
@@ -411,15 +412,14 @@
         "Enabled": false,
         "IncludeStaticBodies": true,
         "IncludeKeyframedBodies": true,
-        "EditorAutoUpdate": true,
+        "EditorAutoUpdate": false,
         "AgentHeight": 64,
         "AgentRadius": 16,
         "AgentStepSize": 18,
         "AgentMaxSlope": 40,
         "ExcludedBodies": "",
         "IncludedBodies": ""
-      },
-      "GameObjectSystems": []
+      }
     },
     "__variables": []
   },
@@ -428,6 +428,8 @@
   "MenuPath": null,
   "MenuIcon": null,
   "DontBreakAsTemplate": false,
-  "__references": [],
+  "__references": [
+    "stnkybo.vineboom#126082"
+  ],
   "__version": 2
 }

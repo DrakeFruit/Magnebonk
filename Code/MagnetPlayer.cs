@@ -9,6 +9,7 @@ public sealed class MagnetPlayer : Component, Component.ITriggerListener
     [Property] public float CoinMultiplier { get; set; } = 1;
     [Property] public float PickupRadius { get; set; } = 75;
     [Property] public int InteractionDistance { get; set; } = 100;
+    [Property] SoundEvent PickupSound { get; set; } 
     [RequireComponent] HullCollider Collider { get; set; }
     public List<Coin> CoinsList { get; set; } = new();
     public int Coins { get; set; }
@@ -99,7 +100,7 @@ public sealed class MagnetPlayer : Component, Component.ITriggerListener
                 continue;
             }
 
-            float lerpSpeed = 10f; 
+            float lerpSpeed = 15f; // If under a specific number, it doesn't pick up correctly some times
             coin.WorldPosition = Vector3.Lerp( coin.WorldPosition, WorldPosition, Time.Delta * lerpSpeed );
 
             if ( (coin.WorldPosition - WorldPosition).Length < 35f )
@@ -107,6 +108,7 @@ public sealed class MagnetPlayer : Component, Component.ITriggerListener
                 Coins += (int)CoinMultiplier;
                 coin.GameObject.Destroy();
                 CoinsList.RemoveAt( i );
+                Sound.Play(PickupSound);
             }
         }
     }
