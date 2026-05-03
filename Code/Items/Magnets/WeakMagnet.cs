@@ -1,6 +1,6 @@
 using Sandbox;
 
-public sealed class WeakMagnet : Item
+public sealed partial class WeakMagnet : Item
 {
     public float Multiplier = 1.1f;
     public override void Pickup()

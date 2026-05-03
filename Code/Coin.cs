@@ -10,6 +10,6 @@ public sealed class Coin : Component
 	protected override void OnFixedUpdate()
 	{
 		WorldRotation = WorldRotation.Angles().WithYaw(WorldRotation.Yaw() + 2);
-		WorldPosition = WorldPosition.WithZ((float)Math.Sin(TimeSince * speed) * amount + startingHeight);
+		WorldPosition = WorldPosition.WithZ((float)Math.Sin(TimeSince * speed) * amount + startingHeight * Time.Delta);
 	}
 }

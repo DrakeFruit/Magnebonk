@@ -1,0 +1,44 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root class="PauseMenu @(IsOpen ? "" : "hidden")">
+	<h2>MAGNEBONK</h2>
+
+	<div class="menu">
+		<button class="btn" onclick=@Resume>Resume</button>
+		<button class="btn" onclick=@Options>Options</button>
+		<button class="btn danger" onclick=@Quit>Quit</button>
+	</div>
+</root>
+
+@code
+{
+    public bool IsOpen { get; set; }
+
+    protected override void OnUpdate()
+    {
+        if (Input.EscapePressed)
+        {
+            Input.EscapePressed = false;
+            IsOpen = !IsOpen;
+        }
+    }
+
+    void Resume()
+    {
+        IsOpen = false;
+    }
+
+    void Options()
+    {
+        Game.Overlay.ShowSettingsModal();
+    }
+
+    void Quit()
+    {
+        Game.Close();
+    }
+
+    protected override int BuildHash() => System.HashCode.Combine( IsOpen );
+}

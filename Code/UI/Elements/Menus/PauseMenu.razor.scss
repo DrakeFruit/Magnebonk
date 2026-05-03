@@ -1,0 +1,52 @@
+PauseMenu {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(35, 35, 35, 0.69);
+    backdrop-filter: blur(25px);
+    font-family: Cause;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+
+    > h2 {
+        font-family: "Rubik Spray Paint";
+        font-size: 100px;
+        color: white;
+        margin: 0 0 40px 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 30px;
+        border-radius: 20px;
+        background-color: rgba(37, 50, 91);
+    }
+
+    button {
+        font-size: 40px;
+        color: white;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: rgb(50, 62, 100);
+        transition: background 0.15s ease, transform 0.1s ease;
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
