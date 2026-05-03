@@ -108,7 +108,7 @@ public sealed class MagnetPlayer : Component, Component.ITriggerListener
                 Coins += (int)CoinMultiplier;
                 coin.GameObject.Destroy();
                 CoinsList.RemoveAt( i );
-                Sound.Play(PickupSound);
+                GameObject.PlaySound(PickupSound);
             }
         }
     }

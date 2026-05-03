@@ -29,7 +29,7 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "PickupRadius": 30,
-        "PickupSound": "sounds/vine boom.sound"
+        "PickupSound": "sound/coin1.sound"
       },
       {
         "__type": "Sandbox.PlayerController",
@@ -204,6 +204,7 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
+        "RemoveUnownedItems": true,
         "Source": "OwnerConnection",
         "WorkshopItems": []
       },
@@ -324,6 +325,7 @@
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null,
+            "RemoveUnownedItems": true,
             "Source": "OwnerConnection",
             "WorkshopItems": []
           }
@@ -368,7 +370,7 @@
             "OnTriggerExit": null,
             "Radius": 11.313708,
             "RollingResistance": null,
-            "Start": "0,0,60.68629",
+            "Start": "0,0,60.6862907",
             "Static": false,
             "Surface": null,
             "SurfaceVelocity": "0,0,0"
@@ -418,7 +420,9 @@
         "AgentStepSize": 18,
         "AgentMaxSlope": 40,
         "ExcludedBodies": "",
-        "IncludedBodies": ""
+        "IncludedBodies": "",
+        "DeferGeneration": false,
+        "CustomBounds": false
       }
     },
     "__variables": []
@@ -429,7 +433,7 @@
   "MenuIcon": null,
   "DontBreakAsTemplate": false,
   "__references": [
-    "stnkybo.vineboom#126082"
+    "igrotronika.coin1#49596"
   ],
   "__version": 2
 }
