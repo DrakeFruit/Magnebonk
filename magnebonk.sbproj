@@ -5,7 +5,7 @@
   "Ident": "magnebonk",
   "Schema": 1,
   "IncludeSourceFiles": false,
-  "Resources": null,
+  "Resources": "/fonts/*",
   "PackageReferences": [],
   "EditorReferences": null,
   "Mounts": null,
